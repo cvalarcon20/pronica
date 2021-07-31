@@ -1,0 +1,43 @@
+/* ///////////////////////////////////////////////////////////////////////////////*/
+/* //////////////////////////  STYLES FOR CONTACT FORM  //////////////////////////*/
+/* ///////////////////////////////////////////////////////////////////////////////*/
+
+// Estos es solamente para form CONTACTO
+
+#contact{
+    text-align: center;
+    color: $bg-letras;
+    margin-left: 110px;
+ 
+
+        .container{
+            background-color: $bg-seccion2;
+            margin-top: 150px;
+            height: 600px;
+
+            h1{
+                color:$bg-letras;
+                text-align: center;
+            }
+        
+            .subcontainer{
+                display: flex;
+                flex-direction: row;
+            
+                .btn{
+                    color:$bg-principal;
+                    &:hover{
+                      background-color:  lighten($bg-principal, 20%);
+                      color:$bg-letras;
+                    }
+                }
+            
+            }
+        
+        }
+ 
+        .card-img{
+        background-image: url(../images/ubicacion.jpg);
+        }
+
+}  

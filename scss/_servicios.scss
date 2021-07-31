@@ -1,0 +1,41 @@
+
+/* /////////////////////  SECCION MAIN  /////////////////////*/
+
+.titulo{
+    @extend %tituloEsp;
+}
+
+.container__seccion{
+    margin-top: 30px;
+    
+    .img-fluid {
+        margin-left: 30px;
+    }
+}
+/* ///////////// SECCION - TRABAJOS REALIZADOS  GALERIA////////////// */
+
+#galeria {
+
+    .col-lg-4{
+          padding: 10px;
+          
+          p{
+            color:$bg-letras;
+            font-weight: 600;
+            text-align: center;
+            margin-top: 20px;
+            
+          }
+
+        img {
+            width:$totalWidth;
+
+            
+            &:hover{
+                transform: scale(1.1);
+                transition: 1s;
+            }
+        }
+    }    
+
+}

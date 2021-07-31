@@ -1,0 +1,360 @@
+
+
+/* ////// SECCION 1 - BIENVENIDO CAROUSEL  ////// */
+
+
+
+.carousel-inner{
+    margin-top: $margin-top-sections;
+    margin-bottom: 30px; 
+ 
+    img{
+        width: 360px;
+        height: 600px;
+    }
+
+
+    .carousel-caption{
+        p{
+            font-size: 1.3em;
+            font-weight: 900;
+        } 
+        h3{
+            font-weight: 800;
+        }
+
+        h2{
+            color:$bg-letras;
+            font-size: 2.5em;
+            font-weight: 900;      
+        }
+
+        h1{
+            color:$bg-letras;
+            text-align: center  ;
+            font-size: 1.3em;
+            font-weight: 900;
+            padding-top: 20px;
+        }
+    }
+
+
+}
+
+/* ////// SECCION 2 - ESPECIALISTAS EN ////// */
+
+
+.center{
+  height:100vh;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* End Non-Essential  */
+
+.property-card{
+  margin-top: 200px;
+  height:18em;
+  width:13em;
+  gap: 10px;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  position:relative;
+  @extend %especialist_transition;
+  border-radius:16px;
+  overflow:hidden;
+  
+
+
+    .property-image1{
+    background-image:url('/images/ups.jpg');
+    @extend %especialistas;
+    }
+
+    .property-image2{
+        background-image:url('/images/inversor.jpg');
+        @extend %especialistas;
+    }
+
+    .property-image3{
+        background-image:url('/images/recti.jpg');
+        @extend %especialistas;
+    }
+
+    .property-image4{
+        background-image:url('/images/bate.jpg');
+        @extend %especialistas;
+    }
+
+    .property-image5{
+        background-image:url('/images/data2.jpg');
+        @extend %especialistas;
+    }
+
+    .property-image6{
+        background-image:url('/images/aires.jpg');
+        @extend %especialistas;
+    }
+
+    .property-description{
+    background-color: #FAFAFC;
+    height:12em;
+    width:14em;
+    position:absolute;
+    bottom:0em;
+    @extend %especialist_transition;
+    padding: 0.5em ;
+    text-align:left;
+
+        h5{
+        margin:0px;
+        font-size:1.4em;
+        font-weight:900;
+        }
+      
+        p{
+        font-size:12px;
+        margin-top: 20px;
+        font-weight:800;
+        }
+ 
+
+    }
+
+  
+
+
+
+
+}
+
+/* Bottom Card Section */
+
+
+/* Social Icons */
+
+.property-social-icons
+{
+  width:1em;
+  height:1em;
+  background-color:black;
+  position:absolute;
+  bottom:1em;
+  left:1em;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* Property Cards Hover States */
+
+.property-card:hover .property-description
+{
+  height:0em;
+  padding:0px 1em;
+}
+.property-card:hover .property-image
+{
+  height:18em;
+}
+
+.property-card:hover .property-social-icons
+{
+  background-color:white;
+}
+
+.property-card:hover .property-social-icons:hover
+{
+  background-color:blue;
+  cursor:pointer;
+}
+
+
+
+/* ////// SECCION PROD - TITULO  ////// */
+.titulo{
+    h1{
+        font-weight: 900;
+    }
+    h2{
+        font-weight: 900;
+        text-align: center;
+        padding:5px;
+    }
+}
+
+
+
+/* ////// SECCION 3 - QUIENES SOMOS ////// */
+
+.section{
+    @extend %marginSection;
+}
+
+.container__seccion {
+    background:$bg-seccion2;
+
+   
+     
+
+    .titulo__sections {
+        color:$bg-letras;
+        margin:10px 0px 10px 40px;
+        font-size: 2.3em;
+        font-weight: 900;   
+        padding-top: 40px;
+    }      
+
+            .container__quienes__descripcion{
+                color:$bg-letras ;
+                margin:20px 0px 10px 40px;
+                font-size: 1.2em;
+                font-weight: 500;
+                text-align: left;
+    
+                span{
+                    color:$hover-txtmenu;
+                }
+
+            }
+}
+
+
+/* ////// SECCION 4 - MISION ////// */
+
+
+.container__mision__fondo{
+    background-image: $fotoMision;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+
+
+    .container__mision {
+        background-color: $bg-seccion1;
+        width:$totalWidth;
+        height: 500px;
+        margin-bottom: 100px;
+        margin-top:$margin-top-sections;
+
+        img{
+            margin-left: 20px;
+            }
+
+        .titulo__sections {
+            color:$bg-letras;
+            font-size: 2.3em;
+            font-weight: 900;   
+            margin:10px 0px 10px 40px;
+            padding-top: 40px;
+        }
+
+        .container__mision__descripcion{
+            color:$bg-letras;
+            font-size: 1.2em;
+            font-weight: 500;
+            text-align: left;
+            padding: 0px 20px 20px 40px ;
+        } 
+
+    }        
+
+}
+
+/* ////// SECCION 5 - REPRESENTANTES  ////// */
+
+.card-deck{
+        background-color: $bg-seccion1;
+        p{
+        text-align: left;
+        color:$bg-letrecontraste;
+        }
+
+        h4{
+            color:$bg-letrecontraste;
+            font-weight: 600;
+        
+        }
+        
+}
+
+
+
+
+/* ////// SECCION 6 - CONOCER + ////// */
+
+.container__conocer {
+	width: $totalWidth;
+	height: 200px;
+    margin-top: $margin-top-sections;
+    margin-bottom: 120px ;
+    color:$bg-letras;
+    background-color: $bg-seccion1;
+    
+        .container__conocer__titulo{
+            color:$bg-letras;
+            font-size: 2.3em;
+            text-align: center;
+            padding-top: 60px;
+        }
+
+         a{
+            color:$bg-letras;
+            padding-top: 20px;
+            margin-left: 45%;
+        }
+}
+
+/* ////// SECCION  WHATSAPP ////// */
+
+.float {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 72px;
+    right: 50px;
+    background-color: #01B32B;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 34px;
+    z-index: 1;
+
+    &:hover{
+        color: $bg-principal;
+    }
+
+}
+
+/* ////// SECCION  FOOTER ////// */
+
+.container-footer{
+    margin-top: 100px;
+
+    #hr1{
+        @extend %footer;
+    }
+
+    #hr2{
+        width: 150px;
+        height: 2px;
+    }
+
+    #hr3{
+        @extend %footer; 
+    }
+
+    h6, p, li, a  {
+        color:$bg-letras;
+    }
+
+
+}

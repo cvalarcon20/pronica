@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-image: $fondoPrinicpal;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* ///////// ESTILOS MENU  /////////// */
+.logo{
+    margin-right: 40px;
+}
+
+.fa-bars{
+    color:$bg-letras;
+}
+
+.navbar { 
+    width: 100%;
+    height: 90px;
+    background-color:$bg-principal;
+
+   .navbar-brand{
+       width: 275px;
+       height: 80px;
+   }
+
+   .navbar-nav{
+    margin-left: 30px;   
+    background-color:$bg-principal;
+    width: 80%;
+   }
+
+
+    .nav-link {
+        color: $bg-letras;
+        margin: 10px;
+        
+        &:hover{
+            color:$hover-txtmenu;
+        }
+    }
+
+    .dropdown-menu{
+        background-color: $bg-principal;
+
+        a {
+            color:$bg-letras;
+            
+        }
+        .dropdown-item{
+            &:hover{
+                color:$bg-principal;
+            }
+        }
+    }
+}
+/* ///////// ESTILO MENU LINKS SOCIALES /////////// */
+
+.social{
+    @extend %socialLink;
+}

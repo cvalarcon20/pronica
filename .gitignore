@@ -1,0 +1,2 @@
+# Directorios o archivos a ignorar en GIT
+node_modules/
